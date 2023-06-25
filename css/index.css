@@ -1,20 +1,22 @@
 :root {
-    --var-primary:#0065FE;
-    --var-main: #141414;
+  --var-primary: #0065fe;
+  --var-main: #141414;
+}
+
+@import url("https://fonts.cdnfonts.com/css/kanit?styles=19866");
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(../fonts/Gilroy-Medium.ttf);
 }
 
 @font-face {
-    font-family: Gilroy-Medium;
-    src: url(../fonts/Gilroy-Medium.ttf);
-}
-
-@font-face {
-    font-family: Gilroy-SemiBold;
-    src: url(../fonts/Gilroy-SemiBold.ttf);
+  font-family: Gilroy-SemiBold;
+  src: url(../fonts/Gilroy-SemiBold.ttf);
 }
 @font-face {
-    font-family: Gilroy-Bold;
-    src: url(../fonts/Gilroy-Bold.ttf);
+  font-family: Gilroy-Bold;
+  src: url(../fonts/Gilroy-Bold.ttf);
 }
 
 * {
@@ -24,77 +26,129 @@
   color: var(--var-main);
   font-weight: 300;
   font-size: 18px;
-
 }
 
 .active {
-    color: var(--var-primary);
+  color: var(--var-primary);
 }
 
-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 30vh; */
+  flex-direction: column;
 }
 
 nav {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin: .5rem 2rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0.5rem 2rem;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.2rem;
 }
 
 .nav-links {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links li {
-    margin-left: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-a, .button {
-    text-decoration: none;
+a,
+.button {
+  text-decoration: none;
 }
 
 li a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .auth {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Button */
 .button {
-    background-color: var(--var-primary);
-    padding: .5rem .75rem;
-    color: #fff;
-    border-radius: 25px;
-    font-family: Gilroy-SemiBold, sans-serif;
+  background-color: var(--var-primary);
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  border-radius: 25px;
+  font-family: Gilroy-SemiBold, sans-serif;
 }
-
 
 #login {
-    padding: .5rem;
+    padding: 0.5rem;
     color: var(--var-primary);
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+  margin: 3rem 1rem 1rem;
+}
+.title,
+.title span {
+  font-size: 48px;
+
+  font-family: Gilroy-Bold, serif;
+  text-align: center;
+  line-height: 96px;
+}
+
+.title span {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+  color: var(--var-primary);
+}
+
+.subtitle {
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+ .hero-buttons {
+    margin: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .hero-buttons a {
+    margin-right: 20px;
+ }
+
+ .button-secondary {
+    color: var(--var-primary);
+ }
