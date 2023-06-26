@@ -40,6 +40,11 @@
   width: 100%;
   /* height: 30vh; */
   flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    #1e344800 99.99%,
+    rgba(30, 52, 72, 5) 100%
+  );
 }
 
 nav {
@@ -98,16 +103,16 @@ li a {
 }
 
 #login {
-    padding: 0.5rem;
-    color: var(--var-primary);
+  padding: 0.5rem;
+  color: var(--var-primary);
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0 0;
 }
 .title {
   margin: 3rem 1rem 1rem;
@@ -139,18 +144,71 @@ li a {
   text-align: center;
   max-width: 60%;
 }
- .hero-buttons {
-    margin: 2rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
+.hero-buttons {
+  margin: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
- .hero-buttons a {
-    margin-right: 20px;
- }
+.hero-buttons a {
+  margin-right: 20px;
+}
 
- .button-secondary {
-    color: var(--var-primary);
- }
+.button-secondary {
+  color: var(--var-primary);
+}
+
+.info {
+  background: #f9fbfd;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 3rem 3rem;
+  gap: 1rem;
+}
+
+#one-stop {
+  width: 337px;
+  height: 96px;
+  font-family: Gilroy-Bold;
+  font-size: 40px;
+  /* line-height: 48px; */
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#one-stop h3 span {
+  color: var(--var-primary);
+  font-family: Gilroy-Bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.info div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.info div h3 {
+  font-family: Gilroy-SemiBold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.info div p {
+  font-family: Gilroy-Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
